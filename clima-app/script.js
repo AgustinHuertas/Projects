@@ -15,11 +15,8 @@ async function buscarClima(){
         let clima = datos.weather[0].main.toLowerCase()
 
         document.getElementById("temperatura").textContent = "Temperatura: " + datos.main.temp + " °C"
-
         document.getElementById("descripcion").textContent = "Clima: " + datos.weather[0].description
-
         document.getElementById("humedad").textContent = "Humedad: " + datos.main.humidity + "%"
-
         document.getElementById("hora").textContent = "Hora local: " + horaLocal(datos)
 
         mostrarIcono(clima, horaLocal(datos))
