@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico del Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Pronóstico del clima</h1>
+        <input type="text" id="ciudad" placeholder="Ingrese una ciudad">
+        <button onclick="buscarClima()">Buscar</button>
+        <div id="resultado">
+            <img src="./gifs/copo-de-nieve.gif" class="gif" id="snow">
+            <img src="./gifs/lluvia.gif" class="gif" id="rain">
+            <img src="./gifs/noche.gif" class="gif" id="night">
+            <img src="./gifs/nubes.gif" class="gif" id="cloud">
+            <img src="./gifs/sol.gif" class="gif" id="clear">
+            <p id="temperatura"></p>
+            <p id="descripcion"></p>
+            <p id="humedad"></p>
+            <p id="hora"></p>
+        </div>
+    </div>
+<script src="script.js" ></script>
+</body>
+
+</html>
